@@ -24,7 +24,7 @@
   
   <!-- 2. Tailwind CSS - 阿里 UC CDN (国内快速) -->
   <script src="https://image.uc.cn/s/uae/g/3n/mos-production/0915/3.4.17.js"></script>
-  
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
   <!-- 4. 非关键JS库 - 延迟加载 (阿里巴巴集团 CDN) -->
   <script>
     // 按需加载配置 - 阿里 UC CDN
@@ -5819,7 +5819,9 @@
 <div class="hotel-card-name">北海银滩艾琳度假酒店（侨港国际客运港店）</div>
 <div class="hotel-card-address">📍 广西北海银海区金海岸大道8号万泉城二区1栋1-8层</div>
 <div class="hotel-card-year">🗓️ 2024年开业</div>
-<a class="hotel-card-book device-link" href="javascript:;" onclick="openCtripHotel()">预订 →</a>
+<wx-open-launch-weapp id="launch-btn" username="gh_36ada103ba97" path="/pages/hotel/detail?hotelId=23809547&cityId=189">
+<button class="hotel-card-book device-link" >预订 →</button>
+</wx-open-launch-weapp>
 </div>
 <div class="hotel-card-new">
 <div class="hotel-card-header">
