@@ -7065,6 +7065,16 @@
 }
 
   </script>
+    <script>
+      var btn = document.getElementById('launch-btn');
+      btn.addEventListener('launch', function (e) {
+          console.log('success');
+      });
+      btn.addEventListener('error', function (e) {
+          console.log('fail', e.detail);
+          alert("跳转失败，请确认是否在微信环境中打开");
+      });
+    </script>
   
 </body>
 </html>
